@@ -3,16 +3,27 @@ import styled from 'styled-components';
 export const Item = styled.li`
   display: flex;
   align-items: center;
-  padding: 15px 0;
-  margin: 10px 0;
+  margin-bottom: 10px;
+  padding: 10px 10px;
   background-color: #f2f2f2;
   border-radius: 10px;
-  width: 100%;
+  `;
+
+export const Status = styled.span`
+  display: block;
+  margin-right: 10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: ${({isOnline}) => (isOnline ? 'green' : 'red')};
 `;
-
-export const Status = styled.span``;
-
-export const Avatar = styled.img``;
+ 
+export const Avatar = styled.img`
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #cdcdcd;
+  border-radius: 5px;
+`;
 
 export const Name = styled.p`
   font-size: 18px;
